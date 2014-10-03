@@ -5,7 +5,7 @@ use warnings;
 package MooseX::AttributeTags::PRole;
 
 our $AUTHORITY = 'cpan:TOBYINK';
-our $VERSION   = '0.001';
+our $VERSION   = '0.002';
 
 use MooseX::Role::Parameterized;
 

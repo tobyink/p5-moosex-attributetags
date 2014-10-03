@@ -4,3 +4,8 @@
 	issued  2013-08-12;
 	label   "Initial release".
 
+`MooseX-AttributeTags 0.002 cpan:TOBYINK`
+	issued  2014-10-03;
+	changeset [
+		item "Add missing dependency on Test::Fatal."^^Packaging;
+	].
