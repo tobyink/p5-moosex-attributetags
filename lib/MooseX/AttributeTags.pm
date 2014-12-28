@@ -91,7 +91,7 @@ MooseX::AttributeTags - tag your Moose attributes
    
    use Moose;
    use MooseX::Types::Moose 'Bool';
-   use MooseX::AttributeTraits (
+   use MooseX::AttributeTags (
       SerializationStyle => [
          hidden => Bool,
       ],
