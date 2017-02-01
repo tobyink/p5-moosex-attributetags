@@ -5,7 +5,7 @@ use warnings;
 package MooseX::AttributeTags;
 
 our $AUTHORITY = 'cpan:TOBYINK';
-our $VERSION   = '0.003';
+our $VERSION   = '0.004';
 
 use Carp;
 use Data::OptList qw(mkopt);

@@ -15,3 +15,14 @@
 	changeset [
 		item "Avoid warning about constants from lexical variables potentially modified elsewhere in newer versions of Perl."^^Bugfix;
 	].
+
+`MooseX-AttributeTags 0.004 cpan:TOBYINK`
+	issued  2014-10-03;
+	changeset [
+		item [
+			a dcs:Bugfix, dcs:Documentation;
+			label "Correct module name in SYNOPSIS.";
+			seealso <https://github.com/tobyink/p5-moosex-attributetags/pull/1>;
+		];
+		item "Copyright 2017."^^Documentation;
+	].
