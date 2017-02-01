@@ -9,3 +9,9 @@
 	changeset [
 		item "Add missing dependency on Test::Fatal."^^Packaging;
 	].
+
+`MooseX-AttributeTags 0.003 cpan:TOBYINK`
+	issued  2017-01-30;
+	changeset [
+		item "Avoid warning about constants from lexical variables potentially modified elsewhere in newer versions of Perl."^^Bugfix;
+	].

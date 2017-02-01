@@ -5,11 +5,13 @@ use warnings;
 package MooseX::AttributeTags;
 
 our $AUTHORITY = 'cpan:TOBYINK';
-our $VERSION   = '0.002';
+our $VERSION   = '0.003';
 
 use Carp;
 use Data::OptList qw(mkopt);
 use Scalar::Util qw(blessed);
+
+my $yah = 1; # avoid exported subs becoming constants
 
 sub import
 {
@@ -40,7 +42,7 @@ sub import
 		);
 		
 		no strict 'refs';
-		*$traitqname = sub () { $traitqname };
+		*$traitqname = sub () { $traitqname if $yah };
 	}
 }
 
