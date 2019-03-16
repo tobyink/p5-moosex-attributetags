@@ -28,6 +28,7 @@ use Test::Fatal;
 {
 	package Foo;
 	use Moose;
+	use namespace::autoclean;
 	use MooseX::AttributeTags (
 		'Foo',
 		'Bar' => [

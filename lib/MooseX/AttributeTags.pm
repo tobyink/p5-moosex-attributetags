@@ -11,6 +11,9 @@ use Carp;
 use Data::OptList qw(mkopt);
 use Scalar::Util qw(blessed);
 
+my $subname = eval { require Sub::Name; 'Sub::Name'->can('subname') }
+	|| do { require Sub::Util; 'Sub::Util'->can('set_subname') };
+
 my $yah = 1; # avoid exported subs becoming constants
 
 sub import
@@ -41,8 +44,9 @@ sub import
 			parameters => { attributes => \%attrs },
 		);
 		
+		my $coderef = $subname->($traitqname, sub () { $traitqname if $yah });
 		no strict 'refs';
-		*$traitqname = sub () { $traitqname if $yah };
+		*$traitqname = $coderef;
 	}
 }
 
