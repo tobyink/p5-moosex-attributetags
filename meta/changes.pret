@@ -17,7 +17,7 @@
 	].
 
 `MooseX-AttributeTags 0.004 cpan:TOBYINK`
-	issued  2014-10-03;
+	issued  2017-10-03;
 	changeset [
 		item [
 			a dcs:Bugfix, dcs:Documentation;
@@ -25,4 +25,12 @@
 			seealso <https://github.com/tobyink/p5-moosex-attributetags/pull/1>;
 		];
 		item "Copyright 2017."^^Documentation;
+	].
+
+`MooseX-AttributeTags 0.005 cpan:TOBYINK`
+	issued  2019-03-16;
+	changeset [
+		item "Use Sub::Name/Sub::Util to name exported constants."^^Change;
+		item "Copyright 2019."^^Documentation;
+		item "Document that constants exist."^^Documentation;
 	].
